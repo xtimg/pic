@@ -6,11 +6,26 @@
 <title>小涛&#039;Blog </title>
 <meta name="description" content="小涛个人博客，是一个以小涛个人原创文章为主的独立博客网站。"/>
 <meta name="keywords" content="小涛,BLOG,小涛个人博客,晨涛"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" >
 </head>
 <body style="margin:0px">
 <iframe src="http://blog.xt6a.com/" frameborder="0" width="100%" height="100%"></iframe>
-<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
-<script>document.body.oncopy = function() { swal("复制成功！", "转载请务必保留原文链接，申明来源，谢谢合作！！","success");};</script>
+  <!--弹窗开始-->
+<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script>
+swal('柚子互联','用户QQ群 560727776 售后QQ 207781983\n\n为保证你的业务畅通 遇到问题请及时与我们沟通解决!','success'); function AddFavorite(title, url) {
+  try {
+      window.external.addFavorite(url, title);
+  }
+catch (e) {
+     try {
+       window.sidebar.addPanel(title, url,);
+    }
+     catch (e) {
+         alert("抱歉，您所使用的浏览器无法完成此操作。");
+     }
+  }
+}
+</script>
+<!--弹窗结束-->
 </body>
 </html>
